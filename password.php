@@ -7,9 +7,9 @@ $lowercase = preg_match('@[a-z]@', $password);//must contain lower case letters
 $specialChars = preg_match('@[^\w]@', $password);//must contain special charachters
  
 if(strlen($password) < 12 || !$number || !$uppercase || !$lowercase || !$specialChars) {//check if password is strong
-    $strong="Not Strong";
+    $strong=" Strong Password";
 } else {
-    $strong="Strong";
+    $strong="Not Strong Password";
 }
 $result=[
     "result"=>$password." Is ".$strong
