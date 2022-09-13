@@ -14,4 +14,5 @@ if(strlen($password) < 12 || !$number || !$uppercase || !$lowercase || !$special
 $result=[
     "result"=>$password." Is ".$strong
 ];
+echo json_encode($result);
 ?>
