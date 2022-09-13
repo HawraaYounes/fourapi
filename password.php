@@ -11,5 +11,7 @@ if(strlen($password) < 12 || !$number || !$uppercase || !$lowercase || !$special
 } else {
     $strong="Strong";
 }
-
+$result=[
+    "result"=>$password." Is ".$strong
+];
 ?>
